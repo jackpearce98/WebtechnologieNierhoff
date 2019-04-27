@@ -1,0 +1,2318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>PidVid</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Web_1920___1;
+	}
+	#Web_1920___1 * {
+		margin: 0;
+		padding: 0;
+	}
+	.Web_1920___1_Class {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: Web 1920 – 1;
+		--web-view-id: Web_1920___1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	.Rechteck_133_Class {
+		opacity: 1;
+		fill: rgba(39,57,61,1);
+	}
+	.Rechteck_133 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 992px;
+		left: 0px;
+		top: 88px;
+	}
+	.Rechteck_1_Class {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(33,33,33,1);
+		stroke: rgb(33, 33, 33);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rechteck_1 {
+		position: absolute;
+		overflow: visible;
+		width: 1938px;
+		height: 106px;
+		left: 0px;
+		top: 0px;
+	}
+	.Header_Class {
+		opacity: 1;
+		position: absolute;
+		width: 1920px;
+		height: 88px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Pfad_65_Class {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(33,33,33,1);
+	}
+	.Pfad_65 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 1938px;
+		height: 106px;
+	}
+	.navbar_mobile_Class {
+		opacity: 1;
+		fill: rgba(25,157,116,1);
+	}
+	.navbar_mobile {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 28px;
+		left: 28px;
+		width: 45px;
+		height: 30px;
+	}
+	.Rund_Trooper_Class {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: url(#Rund_Trooper_A0_Rectangle_4_pattern);
+	}
+	.Rund_Trooper {
+		position: absolute;
+		overflow: visible;
+		width: 83px;
+		height: 83px;
+		left: 1825px;
+		top: 12px;
+	}
+	.ic_share_Class {
+		opacity: 1;
+		fill: rgba(25,157,116,1);
+	}
+	.ic_share {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 29px;
+		left: 1767px;
+		width: 26.234px;
+		height: 29.15px;
+	}
+	.Suchbereich_Class {
+		opacity: 1;
+		position: absolute;
+		width: 990.851px;
+		height: 295.501px;
+		left: 464.075px;
+		top: 238px;
+		overflow: visible;
+	}
+	.Logo_Class {
+		opacity: 1;
+		position: absolute;
+		width: 318px;
+		height: 105px;
+		left: 336.925px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Rechteck_134_Class {
+		opacity: 1;
+		fill: rgba(25,157,116,1);
+	}
+	.Rechteck_134 {
+		position: absolute;
+		overflow: visible;
+		width: 308.415px;
+		height: 65.934px;
+		left: 9.231px;
+		top: 16.346px;
+	}
+	.PidVid_Class {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 319px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Adobe Gothic Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 105px;
+		color: rgba(39,57,61,1);
+	}
+	.searchbutton_Class {
+		opacity: 1;
+		position: absolute;
+		width: 220px;
+		height: 59.501px;
+		left: 565.925px;
+		top: 236px;
+		overflow: visible;
+	}
+	.Button_Base_Class {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(39,57,61,0);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Button_Base {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 239px;
+		height: 78.501px;
+	}
+	.Button_Label_Class {
+		opacity: 1;
+		position: absolute;
+		left: 72.486px;
+		top: 11.156px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		line-height: 36px;
+		margin-top: -5.5px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(25,157,116,1);
+	}
+	.Filter_Class {
+		opacity: 1;
+		position: absolute;
+		width: 220px;
+		height: 59.501px;
+		left: 235.925px;
+		top: 236px;
+		overflow: visible;
+	}
+	.Button_Base_A0_Path_5_Class {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(39,57,61,0);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Button_Base_A0_Path_5 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 239px;
+		height: 78.501px;
+	}
+	.Button_Label_A0_Text_3_Class {
+		opacity: 1;
+		position: absolute;
+		left: 81.64px;
+		top: 11.156px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		line-height: 36px;
+		margin-top: -5.5px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(25,157,116,1);
+	}
+	.searchbar__Class {
+		opacity: 1;
+		position: absolute;
+		width: 990.851px;
+		height: 88.003px;
+		left: 0px;
+		top: 112.997px;
+		overflow: visible;
+	}
+	.Rechteck_136_Class {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+	}
+	.Rechteck_136 {
+		position: absolute;
+		overflow: visible;
+		width: 1008.851px;
+		height: 106.003px;
+		left: 0px;
+		top: 0px;
+	}
+	.Vidovorschl_ge_Class {
+		opacity: 1;
+		position: absolute;
+		width: 1500px;
+		height: 376px;
+		left: 338px;
+		top: 604.5px;
+		overflow: visible;
+	}
+	.Rechteck_135_Class {
+		opacity: 0;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(245,245,245,0);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rechteck_135 {
+		position: absolute;
+		overflow: visible;
+		width: 1263px;
+		height: 370px;
+		left: 0px;
+		top: 23.5px;
+	}
+	.Gruppe_248_Class {
+		opacity: 1;
+		position: absolute;
+		width: 343px;
+		height: 294px;
+		left: 20px;
+		top: 43.5px;
+		overflow: visible;
+	}
+	.Schwarz_Class {
+		opacity: 1;
+		fill: rgba(33,33,33,1);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Schwarz {
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 105px;
+		left: 0px;
+		top: 189px;
+	}
+	.hqdefault_Class {
+		opacity: 1;
+		fill: url(#hqdefault_A0_Rectangle_10_pattern);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.hqdefault {
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 192px;
+		left: 0px;
+		top: 0px;
+	}
+	.React_js_Bootcamp___Session_1__Class {
+		opacity: 1;
+		position: absolute;
+		left: 6px;
+		top: 236px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 323px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	.Free_React_js_Bootcamp___Day_1_Class {
+		opacity: 1;
+		position: absolute;
+		left: 6px;
+		top: 202px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 255px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	.Linie_6_Class {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(33, 33, 33);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: square;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Linie_6 {
+		overflow: visible;
+		position: absolute;
+		top: 191.5px;
+		left: 1.5px;
+		width: 341px;
+		height: 1px;
+	}
+	.Gruppe_249_Class {
+		opacity: 1;
+		position: absolute;
+		width: 343px;
+		height: 296px;
+		left: 383px;
+		top: 43.5px;
+		overflow: visible;
+	}
+	.hqdefault2_Class {
+		opacity: 1;
+		fill: url(#hqdefault2_A0_Rectangle_12_pattern);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.hqdefault2 {
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 192px;
+		left: 0px;
+		top: 0px;
+	}
+	.Schwarz_A0_Rectangle_13_Class {
+		opacity: 1;
+		fill: rgba(33,33,33,1);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Schwarz_A0_Rectangle_13 {
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 105px;
+		left: 0px;
+		top: 191px;
+	}
+	.React_js_Bootcamp___Session_1__A0_Text_6_Class {
+		opacity: 1;
+		position: absolute;
+		left: 6px;
+		top: 238px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 323px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	.NodeJS_Crash_Course_Class {
+		opacity: 1;
+		position: absolute;
+		left: 6px;
+		top: 204px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 178px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	.Linie_5_Class {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(33, 33, 33);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: square;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Linie_5 {
+		overflow: visible;
+		position: absolute;
+		top: 191.5px;
+		left: 1.5px;
+		width: 341px;
+		height: 1px;
+	}
+	.Gruppe_251_Class {
+		opacity: 1;
+		position: absolute;
+		width: 343px;
+		height: 296px;
+		left: 746px;
+		top: 44.5px;
+		overflow: visible;
+	}
+	.hqdefault3_Class {
+		opacity: 1;
+		fill: url(#hqdefault3_A0_Rectangle_15_pattern);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.hqdefault3 {
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 192px;
+		left: 0px;
+		top: 0px;
+	}
+	.Schwarz_A0_Rectangle_16_Class {
+		opacity: 1;
+		fill: rgba(33,33,33,1);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Schwarz_A0_Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 105px;
+		left: 0px;
+		top: 191px;
+	}
+	.React_js_Bootcamp___Session_1__A0_Text_8_Class {
+		opacity: 1;
+		position: absolute;
+		left: 6px;
+		top: 239px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 323px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	.APIS_with_Node___Express_Class {
+		opacity: 1;
+		position: absolute;
+		left: 6px;
+		top: 205px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 212px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	.Linie_2_Class {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(33, 33, 33);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: square;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Linie_2 {
+		overflow: visible;
+		position: absolute;
+		top: 191.5px;
+		left: 1.5px;
+		width: 341px;
+		height: 1px;
+	}
+	.Linie_4_Class {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(33, 33, 33);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: square;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Linie_4 {
+		overflow: visible;
+		position: absolute;
+		top: 191.5px;
+		left: 1.5px;
+		width: 341px;
+		height: 1px;
+	}
+	.Gruppe_250_Class {
+		opacity: 1;
+		position: absolute;
+		width: 343px;
+		height: 295.854px;
+		left: 1110px;
+		top: 44.646px;
+		overflow: visible;
+	}
+	.hqdefaultfuckoff_Class {
+		opacity: 1;
+		fill: url(#hqdefaultfuckoff_A0_Rectangle_18_pattern);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.hqdefaultfuckoff {
+		position: absolute;
+		overflow: visible;
+		width: 342px;
+		height: 191.854px;
+		left: 0px;
+		top: 0px;
+	}
+	.Schwarz_A0_Rectangle_19_Class {
+		opacity: 1;
+		fill: rgba(33,33,33,1);
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Schwarz_A0_Rectangle_19 {
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 105px;
+		left: 0px;
+		top: 190.854px;
+	}
+	.React_js_Bootcamp___Session_1__A0_Text_10_Class {
+		opacity: 1;
+		position: absolute;
+		left: 6px;
+		top: 238.854px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 323px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	.Was_passiert_hier_noch_gleich_Class {
+		opacity: 1;
+		position: absolute;
+		left: 6px;
+		top: 204.854px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 239px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	.Linie_3_Class {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(33, 33, 33);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: square;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Linie_3 {
+		overflow: visible;
+		position: absolute;
+		top: 191.354px;
+		left: 1.5px;
+		width: 341px;
+		height: 1px;
+	}
+	.Rechteck_137_Class {
+		opacity: 1;
+		fill: rgba(39,57,61,1);
+	}
+	.Rechteck_137 {
+		position: absolute;
+		overflow: visible;
+		width: 260px;
+		height: 318px;
+		left: 1240px;
+		top: 35.5px;
+	}
+	.Linie_1_Class {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: transparent;
+		stroke: rgb(25, 157, 116);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Linie_1 {
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 1240.5px;
+		width: 19px;
+		height: 394px;
+	}
+</style>
+</head>
+<body class="Web_1920___1_Class">
+<div id="Web_1920___1">
+	<svg class="Rechteck_133">
+		<rect class="Rechteck_133_Class" rx="0" ry="0" x="0" y="0" width="1920" height="992">
+		</rect>
+	</svg>
+	<svg class="Rechteck_1">
+		<rect class="Rechteck_1_Class" rx="0" ry="0" x="0" y="0" width="1920" height="88">
+		</rect>
+	</svg>
+	<div class="Header_Class">
+		<svg class="Pfad_65" viewBox="0 0 1920 88">
+			<path class="Pfad_65_Class" d="M 0 0 L 1920 0 L 1920 88 L 0 88 L 0 0 Z">
+			</path>
+		</svg>
+		<svg class="navbar_mobile" viewBox="3 6 45 30">
+			<path class="navbar_mobile_Class" d="M 3 36 L 48 36 L 48 31 L 3 31 L 3 36 L 3 36 Z M 3 23.5 L 48 23.5 L 48 18.5 L 3 18.5 L 3 23.5 L 3 23.5 Z M 3 6 L 3 11 L 48 11 L 48 6 L 3 6 L 3 6 Z">
+			</path>
+		</svg>
+		<svg class="Rund_Trooper">
+			<pattern elementId="Rund_Trooper_A0_Rectangle_4" id="Rund_Trooper_A0_Rectangle_4_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="Rund_Trooper_A0_Rectangle_4_pattern.png" xlink:href="Rund_Trooper_A0_Rectangle_4_pattern.png"></image>
+			</pattern>
+			<rect class="Rund_Trooper_Class" rx="0" ry="0" x="0" y="0" width="65" height="65">
+			</rect>
+		</svg>
+		<svg class="ic_share" viewBox="3 2 26.235 29.149">
+			<path class="ic_share_Class" d="M 24.86212348937988 22.60356140136719 C 23.75444221496582 22.60356140136719 22.76335906982422 23.04256057739258 22.00547409057617 23.73032569885254 L 11.61367607116699 17.65751266479492 C 11.68655014038086 17.32094764709473 11.74484920501709 16.98438262939453 11.74484920501709 16.6331844329834 C 11.74484920501709 16.28198432922363 11.68655014038086 15.94541931152344 11.61367607116699 15.60885429382324 L 21.88887596130371 9.594573974609375 C 22.67591094970703 10.32623863220215 23.71071815490723 10.77986907958984 24.86212348937988 10.77986907958984 C 27.28153228759766 10.77986907958984 29.23454856872559 8.819009780883789 29.23454856872559 6.389884471893311 C 29.23454856872559 3.960760116577148 27.28153228759766 1.999900102615356 24.86212348937988 1.999900102615356 C 22.44271659851074 1.999900102615356 20.48969841003418 3.960760116577148 20.48969841003418 6.389884471893311 C 20.48969841003418 6.74108362197876 20.54799842834473 7.077649116516113 20.62087249755859 7.414214611053467 L 10.34567356109619 13.42849349975586 C 9.558636665344238 12.69682884216309 8.523829460144043 12.24319839477539 7.372425079345703 12.24319839477539 C 4.95301628112793 12.24319839477539 3.000000238418579 14.20405769348145 3.000000238418579 16.6331844329834 C 3.000000238418579 19.06230735778809 4.95301628112793 21.02316856384277 7.372425079345703 21.02316856384277 C 8.523829460144043 21.02316856384277 9.558636665344238 20.56953620910645 10.34567356109619 19.83787155151367 L 20.7228946685791 25.92531967163086 C 20.65002059936523 26.23261642456055 20.60629653930664 26.55455017089844 20.60629653930664 26.87648010253906 C 20.60629653930664 29.2324390411377 22.51558876037598 31.14940071105957 24.86212348937988 31.14940071105957 C 27.20866012573242 31.14940071105957 29.11795043945313 29.2324390411377 29.11795043945313 26.87648010253906 C 29.11795043945313 24.52052307128906 27.20866012573242 22.60356140136719 24.86212348937988 22.60356140136719 L 24.86212348937988 22.60356140136719 Z">
+			</path>
+		</svg>
+	</div>
+	<div class="Suchbereich_Class">
+		<div class="Logo_Class">
+			<svg class="Rechteck_134">
+				<rect class="Rechteck_134_Class" rx="0" ry="0" x="0" y="0" width="308.415" height="65.934">
+				</rect>
+			</svg>
+			<div class="PidVid_Class">
+				<span>PidVid</span>
+			</div>
+		</div>
+		<div class="searchbutton_Class">
+			<svg class="Button_Base" viewBox="0 0 220 59.501">
+				<path class="Button_Base_Class" d="M 0 0 L 220 0 L 220 59.5009765625 L 0 59.5009765625 L 0 0 Z">
+				</path>
+			</svg>
+			<div class="Button_Label_Class">
+				<span>Search</span>
+			</div>
+		</div>
+		<div class="Filter_Class">
+			<svg class="Button_Base_A0_Path_5" viewBox="0 0 220 59.501">
+				<path class="Button_Base_A0_Path_5_Class" d="M 0 0 L 220 0 L 220 59.5009765625 L 0 59.5009765625 L 0 0 Z">
+				</path>
+			</svg>
+			<div class="Button_Label_A0_Text_3_Class">
+				<span>Filter</span>
+			</div>
+		</div>
+		<div class="searchbar__Class">
+			<svg class="Rechteck_136">
+				<rect class="Rechteck_136_Class" rx="0" ry="0" x="0" y="0" width="990.851" height="88.003">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<div class="Vidovorschl_ge_Class">
+		<svg class="Rechteck_135">
+			<rect class="Rechteck_135_Class" rx="0" ry="0" x="0" y="0" width="1245" height="352">
+			</rect>
+		</svg>
+		<div class="Gruppe_248_Class">
+			<svg class="Schwarz">
+				<rect class="Schwarz_Class" rx="0" ry="0" x="0" y="0" width="343" height="105">
+				</rect>
+			</svg>
+			<svg class="hqdefault">
+				<pattern elementId="hqdefault_A0_Rectangle_10" id="hqdefault_A0_Rectangle_10_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="hqdefault_A0_Rectangle_10_pattern.png" xlink:href="hqdefault_A0_Rectangle_10_pattern.png"></image>
+				</pattern>
+				<rect class="hqdefault_Class" rx="0" ry="0" x="0" y="0" width="343" height="192">
+				</rect>
+			</svg>
+			<div class="React_js_Bootcamp___Session_1__Class">
+				<span>React.js Bootcamp - Session 1 [~1:30h] Today, we'll start off <br/>by  looking at a high level overview of what makes React <br/>special including its composition model, unidirectional.</span>
+			</div>
+			<div class="Free_React_js_Bootcamp___Day_1_Class">
+				<span>Free React.js Bootcamp - Day 1</span>
+			</div>
+			<svg class="Linie_6">
+				<path class="Linie_6_Class" d="M 0 0 L 340 0">
+				</path>
+			</svg>
+		</div>
+		<div class="Gruppe_249_Class">
+			<svg class="hqdefault2">
+				<pattern elementId="hqdefault2_A0_Rectangle_12" id="hqdefault2_A0_Rectangle_12_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="hqdefault2_A0_Rectangle_12_pattern.png" xlink:href="hqdefault2_A0_Rectangle_12_pattern.png"></image>
+				</pattern>
+				<rect class="hqdefault2_Class" rx="0" ry="0" x="0" y="0" width="343" height="192">
+				</rect>
+			</svg>
+			<svg class="Schwarz_A0_Rectangle_13">
+				<rect class="Schwarz_A0_Rectangle_13_Class" rx="0" ry="0" x="0" y="0" width="343" height="105">
+				</rect>
+			</svg>
+			<div class="React_js_Bootcamp___Session_1__A0_Text_6_Class">
+				<span>React.js Bootcamp - Session 1 [~1:30h] Today, we'll start off <br/>by  looking at a high level overview of what makes React <br/>special including its composition model, unidirectional.</span>
+			</div>
+			<div class="NodeJS_Crash_Course_Class">
+				<span>NodeJS Crash Course</span>
+			</div>
+			<svg class="Linie_5">
+				<path class="Linie_5_Class" d="M 0 0 L 340 0">
+				</path>
+			</svg>
+		</div>
+		<div class="Gruppe_251_Class">
+			<svg class="hqdefault3">
+				<pattern elementId="hqdefault3_A0_Rectangle_15" id="hqdefault3_A0_Rectangle_15_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="hqdefault3_A0_Rectangle_15_pattern.png" xlink:href="hqdefault3_A0_Rectangle_15_pattern.png"></image>
+				</pattern>
+				<rect class="hqdefault3_Class" rx="0" ry="0" x="0" y="0" width="343" height="192">
+				</rect>
+			</svg>
+			<svg class="Schwarz_A0_Rectangle_16">
+				<rect class="Schwarz_A0_Rectangle_16_Class" rx="0" ry="0" x="0" y="0" width="343" height="105">
+				</rect>
+			</svg>
+			<div class="React_js_Bootcamp___Session_1__A0_Text_8_Class">
+				<span>React.js Bootcamp - Session 1 [~1:30h] Today, we'll start off <br/>by  looking at a high level overview of what makes React <br/>special including its composition model, unidirectional.</span>
+			</div>
+			<div class="APIS_with_Node___Express_Class">
+				<span>APIS with Node & Express</span>
+			</div>
+			<svg class="Linie_2">
+				<path class="Linie_2_Class" d="M 0 0 L 340 0">
+				</path>
+			</svg>
+			<svg class="Linie_4">
+				<path class="Linie_4_Class" d="M 0 0 L 340 0">
+				</path>
+			</svg>
+		</div>
+		<div class="Gruppe_250_Class">
+			<svg class="hqdefaultfuckoff">
+				<pattern elementId="hqdefaultfuckoff_A0_Rectangle_18" id="hqdefaultfuckoff_A0_Rectangle_18_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="hqdefaultfuckoff_A0_Rectangle_18_pattern.png" xlink:href="hqdefaultfuckoff_A0_Rectangle_18_pattern.png"></image>
+				</pattern>
+				<rect class="hqdefaultfuckoff_Class" rx="0" ry="0" x="0" y="0" width="342" height="191.854">
+				</rect>
+			</svg>
+			<svg class="Schwarz_A0_Rectangle_19">
+				<rect class="Schwarz_A0_Rectangle_19_Class" rx="0" ry="0" x="0" y="0" width="343" height="105">
+				</rect>
+			</svg>
+			<div class="React_js_Bootcamp___Session_1__A0_Text_10_Class">
+				<span>React.js Bootcamp - Session 1 [~1:30h] Today, we'll start off <br/>by  looking at a high level overview of what makes React <br/>special including its composition model, unidirectional.</span>
+			</div>
+			<div class="Was_passiert_hier_noch_gleich_Class">
+				<span>Was passiert hier noch gleich</span>
+			</div>
+			<svg class="Linie_3">
+				<path class="Linie_3_Class" d="M 0 0 L 340 0">
+				</path>
+			</svg>
+		</div>
+		<svg class="Rechteck_137">
+			<rect class="Rechteck_137_Class" rx="0" ry="0" x="0" y="0" width="260" height="318">
+			</rect>
+		</svg>
+		<svg class="Linie_1">
+			<path class="Linie_1_Class" d="M 0 0 L 0 376">
+			</path>
+		</svg>
+	</div>
+</div>
+<script>
+///////////////////////////////////////
+// INITIALIZATION
+///////////////////////////////////////
+
+/**
+ * Functionality for scaling, showing by media query, and navigation between multiple pages on a single page. 
+ * Code subject to change.
+ **/
+
+if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set
+
+var Application = function() {
+	// event constants
+	this.NAVIGATION_CHANGE = "viewChange";
+	this.VIEW_NOT_FOUND = "viewNotFound";
+	this.STATE_NOT_FOUND = "stateNotFound";
+	this.APPLICATION_COMPLETE = "applicationComplete";
+	this.SIZE_STATE_NAME = "data-is-view-scaled";
+
+	this.currentQuery = {index: 0, rule: null, mediaText: null, id: null};
+	this.inclusionQuery = "(min-width: 0px)";
+	this.exclusionQuery = "none and (min-width: 99999px)";
+	this.LastModifiedDateLabelName = "LastModifiedDateLabel";
+	this.pageRefreshedName = "showPageRefreshedNotification";
+	this.prefix = "--web-";
+	this.applicationStylesheet = null;
+	this.mediaQueryDictionary = {};
+	this.statesDictionary = {};
+	this.states = [];
+	this.views = {};
+	this.viewIds = [];
+	this.viewQueries = {};
+	this.viewScale = 1;
+	this.numberOfViews = 0;
+	this.verticalPadding = 0;
+	this.horizontalPadding = 0;
+	this.stateName = null;
+
+	// view settings
+	this.showUpdateNotification = false;
+	this.showNavigationControls = false;
+	this.scaleViewsToFit = false;
+	this.scaleToFitOnDoubleClick = false;
+	this.actualSizeOnDoubleClick = false;
+	this.scaleViewsOnResize = false;
+	this.navigationOnKeypress = false;
+	this.showViewName = false;
+	this.enableDeepLinking = true;
+	this.refreshPageForChanges = false;
+	this.showRefreshNotifications = true;
+
+	// view controls
+	this.scaleViewSlider = null;
+	this.lastModifiedLabel = null;
+	this.supportsPopState = false; // window.history.pushState!=null;
+	this.initialized = false;
+
+	// refresh properties
+	this.lastModifiedDate = null;
+	this.refreshRequest = null;
+	this.refreshDuration = 2000;
+	this.refreshInterval = null;
+	this.refreshContent = null;
+	this.refreshContentSize = null;
+	this.refreshCheckContent = false;
+	this.refreshCheckContentSize = false;
+
+	var self = this;
+
+	self.initialize = function(event) {
+		var view = self.getVisibleView();
+		self.collectViews();
+		self.collectMediaQueries();
+		self.setViewOptions(view);
+
+		
+		// sometimes the body size is 0 so we call this now and again later
+		if (self.initialized) {
+			window.addEventListener(self.NAVIGATION_CHANGE, self.viewChangeHandler);
+			window.addEventListener("keyup", self.keypressHandler);
+			window.addEventListener("keypress", self.keypressHandler);
+			window.addEventListener("resize", self.resizeHandler);
+			window.document.addEventListener("dblclick", self.doubleClickHandler);
+
+			if (self.supportsPopState) {
+				window.addEventListener('popstate', self.popStateHandler);
+			}
+			else {
+				window.addEventListener('hashchange', self.hashChangeHandler);
+			}
+
+			// we are ready to go
+			window.dispatchEvent(new Event(self.APPLICATION_COMPLETE));
+		}
+
+		if (self.initialized==false) {
+			if (self.showNavigationControls || self.singlePageApplication) {
+				self.syncronizeViewToURL();
+			}
+	
+			if (self.refreshPageForChanges) {
+				self.setupRefreshForChanges();
+			}
+	
+			self.initialized = true;
+		}
+		
+		if (self.scaleViewsToFit) {
+			self.viewScale = self.scaleViewToFit();
+			
+			if (self.viewScale<0) {
+				setTimeout(self.scaleViewToFit, 500);
+			}
+		}
+		else {
+			self.viewScale = self.getViewScaleValue(view);
+			self.updateSliderValue(self.viewScale);
+		}
+	
+		if (self.showUpdateNotification) {
+			self.showNotification();
+		}
+	
+		//"addEventListener" in window ? null : window.addEventListener = window.attachEvent;
+		//"addEventListener" in document ? null : document.addEventListener = document.attachEvent;
+	}
+
+
+	///////////////////////////////////////
+	// AUTO REFRESH 
+	///////////////////////////////////////
+
+	self.setupRefreshForChanges = function() {
+		self.refreshRequest = new XMLHttpRequest();
+
+		if (!self.refreshRequest) {
+			return false;
+		}
+
+		// get document start values immediately
+		self.requestRefreshUpdate();
+	}
+
+	/**
+	 * Attempt to check the last modified date by the headers 
+	 * or the last modified property from the byte array 
+	 * (BETA)
+	 **/
+	self.requestRefreshUpdate = function() {
+		var url = document.location.href;
+		var protocol = window.location.protocol;
+		var method;
+		
+		try {
+
+			if (self.refreshCheckContentSize) {
+				self.refreshRequest.open('HEAD', url, true);
+			}
+			else if (self.refreshCheckContent) {
+				self.refreshContent = document.documentElement.outerHTML;
+				self.refreshRequest.open('GET', url, true);
+				self.refreshRequest.responseType = "text";
+			}
+			else {
+
+				// get page last modified date for the first call to compare to later
+				if (self.lastModifiedDate==null) {
+
+					// File system does not send headers in FF so get blob if possible
+					if (protocol=="file:") {
+						self.refreshRequest.open("GET", url, true);
+						self.refreshRequest.responseType = "blob";
+					}
+					else {
+						self.refreshRequest.open("HEAD", url, true);
+						self.refreshRequest.responseType = "blob";
+					}
+
+					self.refreshRequest.onload = self.refreshOnLoadOnceHandler;
+
+					// In some browsers (Chrome & Safari) this error occurs at send: 
+					// 
+					// Chrome - Access to XMLHttpRequest at 'file:///index.html' from origin 'null' 
+					// has been blocked by CORS policy: 
+					// Cross origin requests are only supported for protocol schemes: 
+					// http, data, chrome, chrome-extension, https.
+					// 
+					// Safari - XMLHttpRequest cannot load file:///Users/user/Public/index.html. Cross origin requests are only supported for HTTP.
+					// 
+					// Solution is to run a local server, set local permissions or test in another browser
+					self.refreshRequest.send(null);
+
+					// In MS browsers the following behavior occurs possibly due to an AJAX call to check last modified date: 
+					// 
+					// DOM7011: The code on this page disabled back and forward caching.
+
+				}
+				else {
+					self.refreshRequest = new XMLHttpRequest();
+					self.refreshRequest.onreadystatechange = self.refreshHandler;
+					self.refreshRequest.ontimeout = function() {
+						console.log("Couldn't find page to check for updates");
+					}
+					
+					var method;
+					if (protocol=="file:") {
+						method = "GET";
+					}
+					else {
+						method = "HEAD";
+					}
+
+					//refreshRequest.open('HEAD', url, true);
+					self.refreshRequest.open(method, url, true);
+					self.refreshRequest.responseType = "blob";
+					self.refreshRequest.send(null);
+				}
+			}
+		}
+		catch (error) {
+			console.log("Refresh failed for the following reason:")
+			console.log(error);
+		}
+	}
+
+	self.refreshHandler = function() {
+		var contentSize;
+
+		try {
+
+			if (self.refreshRequest.readyState === XMLHttpRequest.DONE) {
+				
+				if (self.refreshRequest.status === 2 || 
+					self.refreshRequest.status === 200) {
+					var pageChanged = false;
+
+					self.updateLastModifiedLabel();
+
+					if (self.refreshCheckContentSize) {
+						var lastModifiedHeader = self.refreshRequest.getResponseHeader("Last-Modified");
+						contentSize = self.refreshRequest.getResponseHeader("Content-Length");
+						//lastModifiedDate = refreshRequest.getResponseHeader("Last-Modified");
+						var headers = self.refreshRequest.getAllResponseHeaders();
+						var hasContentHeader = headers.indexOf("Content-Length")!=-1;
+						
+						if (hasContentHeader) {
+							contentSize = self.refreshRequest.getResponseHeader("Content-Length");
+
+							// size has not been set yet
+							if (self.refreshContentSize==null) {
+								self.refreshContentSize = contentSize;
+								// exit and let interval call this method again
+								return;
+							}
+
+							if (contentSize!=self.refreshContentSize) {
+								pageChanged = true;
+							}
+						}
+					}
+					else if (self.refreshCheckContent) {
+
+						if (self.refreshRequest.responseText!=self.refreshContent) {
+							pageChanged = true;
+						}
+					}
+					else {
+						lastModifiedHeader = self.getLastModified(self.refreshRequest);
+
+						if (self.lastModifiedDate!=lastModifiedHeader) {
+							pageChanged = true;
+						}
+
+					}
+
+					
+					if (pageChanged) {
+						clearInterval(self.refreshInterval);
+						self.refreshUpdatedPage();
+						return;
+					}
+
+				}
+				else {
+					console.log('There was a problem with the request.');
+				}
+
+			}
+		}
+		catch( error ) {
+			//console.log('Caught Exception: ' + error);
+		}
+	}
+
+	self.refreshOnLoadOnceHandler = function(event) {
+
+		// get the last modified date
+		if (self.refreshRequest.response) {
+			self.lastModifiedDate = self.getLastModified(self.refreshRequest);
+
+			if (self.lastModifiedDate!=null) {
+
+				if (self.refreshInterval==null) {
+					self.refreshInterval = setInterval(self.requestRefreshUpdate, self.refreshDuration);
+				}
+			}
+			else {
+				console.log("Could not get last modified date from the server");
+			}
+		}
+	}
+
+	self.refreshUpdatedPage = function() {
+		if (self.showRefreshNotifications) {
+			var date = new Date().setTime((new Date().getTime()+10000));
+			document.cookie = encodeURIComponent(self.pageRefreshedName) + "=true" + "; max-age=6000;" + " path=/";
+		}
+
+		document.location.reload(true);
+	}
+
+	self.showNotification = function(duration) {
+		var notificationID = self.pageRefreshedName+"ID";
+		var notification = document.getElementById(notificationID);
+		if (duration==null) duration = 4000;
+
+		if (notification!=null) {return;}
+
+		notification = document.createElement("div");
+		notification.id = notificationID;
+		notification.textContent = "PAGE UPDATED";
+		var styleRule = ""
+		styleRule = "position: fixed; padding: 7px 16px 6px 16px; font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; left: 50%;";
+		styleRule += "top: 20px; background-color: rgba(0,0,0,.5); border-radius: 12px; color:rgb(235, 235, 235); transition: all 2s linear;";
+		styleRule += "transform: translateX(-50%); letter-spacing: .5px; filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, .1))";
+		notification.setAttribute("style", styleRule);
+
+		notification.className= "PageRefreshedClass";
+		
+		document.body.appendChild(notification);
+
+		setTimeout(function() {
+			notification.style.opacity = "0";
+			notification.style.filter = "drop-shadow( 0px 0px 0px rgba(0,0,0, .5))";
+			setTimeout(function() {
+				notification.parentNode.removeChild(notification);
+			}, duration)
+		}, duration);
+
+		document.cookie = encodeURIComponent(self.pageRefreshedName) + "=; max-age=1; path=/";
+	}
+
+	/**
+	 * Get the last modified date from the header 
+	 * or file object after request has been received
+	 **/
+	self.getLastModified = function(request) {
+		var date;
+
+		// file protocol - FILE object with last modified property
+		if (request.response && request.response.lastModified) {
+			date = request.response.lastModified;
+		}
+		
+		// http protocol - check headers
+		if (date==null) {
+			date = request.getResponseHeader("Last-Modified");
+		}
+
+		return date;
+	}
+
+	self.updateLastModifiedLabel = function() {
+		var labelValue = "";
+		
+		if (self.lastModifiedLabel==null) {
+			self.lastModifiedLabel = document.getElementById("LastModifiedLabel");
+		}
+
+		if (self.lastModifiedLabel) {
+			var seconds = parseInt(((new Date().getTime() - Date.parse(document.lastModified)) / 1000 / 60) * 100 + "");
+			var minutes = 0;
+			var hours = 0;
+
+			if (seconds < 60) {
+				seconds = Math.floor(seconds/10)*10;
+				labelValue = seconds + " seconds";
+			}
+			else {
+				minutes = parseInt((seconds/60) + "");
+
+				if (minutes>60) {
+					hours = parseInt((seconds/60/60) +"");
+					labelValue += hours==1 ? " hour" : " hours";
+				}
+				else {
+					labelValue = minutes+"";
+					labelValue += minutes==1 ? " minute" : " minutes";
+				}
+			}
+			
+			if (seconds<10) {
+				labelValue = "Updated now";
+			}
+			else {
+				labelValue = "Updated " + labelValue + " ago";
+			}
+
+			if (self.lastModifiedLabel.firstElementChild) {
+				self.lastModifiedLabel.firstElementChild.textContent = labelValue;
+
+			}
+			else if ("textContent" in self.lastModifiedLabel) {
+				self.lastModifiedLabel.textContent = labelValue;
+			}
+		}
+	}
+
+	self.getShortString = function(string, length) {
+		if (length==null) length = 30;
+		string = string!=null ? string.substr(0, length).replace(/\n/g, "") : "[String is null]";
+		return string;
+	}
+
+	self.getShortNumber = function(value, places) {
+		if (places==null || places<1) places = 3;
+		value = Math.round(value * Math.pow(10,places)) / Math.pow(10, places);
+		return value;
+	}
+
+	///////////////////////////////////////
+	// NAVIGATION CONTROLS
+	///////////////////////////////////////
+
+	self.updateViewLabel = function() {
+		var viewNavigationLabel = document.getElementById("ViewNavigationLabel");
+		var view = self.getVisibleView();
+		var viewIndex = view ? self.getViewIndex(view) : -1;
+		var viewName = view ? self.getViewPreferenceValue(view, self.prefix + "view-name") : null;
+		var viewId = view ? view.id : null;
+
+		if (viewNavigationLabel && view) {
+			if (viewName && viewName.indexOf('"')!=-1) {
+				viewName = viewName.replace(/"/g, "");
+			}
+
+			if (self.showViewName) {
+				viewNavigationLabel.textContent = viewName;
+				self.setTooltip(viewNavigationLabel, viewIndex + 1 + " of " + self.numberOfViews);
+			}
+			else {
+				viewNavigationLabel.textContent = viewIndex + 1 + " of " + self.numberOfViews;
+				self.setTooltip(viewNavigationLabel, viewName);
+			}
+
+		}
+	}
+
+	self.updateURL = function(view) {
+		view = view == null ? self.getVisibleView() : view;
+		var viewId = view ? view.id : null
+		var viewFragment = view ? "#"+ viewId : null;
+
+		if (viewId && self.enableDeepLinking) {
+
+			if (self.supportsPopState==false) {
+				self.setFragment(viewId);
+			}
+			else {
+				if (viewFragment!=window.location.hash) {
+
+					if (window.location.hash==null) {
+						window.history.replaceState({name:viewId}, null, viewFragment);
+					}
+					else {
+						window.history.pushState({name:viewId}, null, viewFragment);
+					}
+				}
+			}
+		}
+	}
+
+	self.setFragment = function(value) {
+		window.location.hash = "#" + value;
+	}
+
+	self.setTooltip = function(element, value) {
+		// setting the tooltip in edge causes a page crash on hover
+		if (/Edge/.test(navigator.userAgent)) { return; }
+
+		if ("title" in element) {
+			element.title = value;
+		}
+	}
+
+	self.getStylesheetRules = function(styleSheet) {
+		if (styleSheet) return styleSheet.cssRules || styleSheet.rules;
+
+		return document.styleSheets[0]["cssRules"] || document.styleSheets[0]["rules"];
+	}
+
+	/**
+	 * If single page application hide all of the views except first
+	 **/
+	self.hideViews = function(selectIndex) {
+		var rules = self.getStylesheetRules();
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+
+			if (rule.media!=null) {
+
+				if (queryIndex==selectIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = selectIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+				}
+				else {
+					self.disableMediaQuery(rule);
+				}
+				
+				queryIndex++;
+			}
+		}
+
+		self.numberOfViews = queryIndex;
+		self.updateViewLabel();
+		self.updateURL();
+
+		self.dispatchViewChange();
+
+		var view = self.getVisibleView();
+		var viewIndex = view ? self.getViewIndex(view) : -1;
+
+		return viewIndex==selectIndex ? view : null;
+	}
+
+	self.showView = function(view) {
+		var id = view ? view.id : null;
+		var query = id ? self.mediaQueryDictionary[id] : null;
+		var display = null;
+
+		if (query) {
+			self.enableMediaQuery(query);
+			if (view==null) view =self.getVisibleView();
+			self.setViewOptions(view);
+		}
+		else if (id) {
+			display = window.getComputedStyle(view).getPropertyValue("display");
+			if (display=="" ||  display=="none") {
+				view.style.display = "block";
+			}
+		}
+	}
+
+	self.setViewOptions = function(view) {
+
+		if (view) {
+			self.scaleViewsToFit = self.getViewPreferenceBoolean(view, self.prefix + "scale-to-fit");
+			self.scaleToFitOnDoubleClick = self.getViewPreferenceBoolean(view, self.prefix + "scale-on-double-click");
+			self.actualSizeOnDoubleClick = self.getViewPreferenceBoolean(view, self.prefix + "actual-size-on-double-click");
+			self.scaleViewsOnResize = self.getViewPreferenceBoolean(view, self.prefix + "scale-on-resize");
+			self.navigationOnKeypress = self.getViewPreferenceBoolean(view, self.prefix + "navigate-on-keypress");
+			self.showViewName = self.getViewPreferenceBoolean(view, self.prefix + "show-view-name");
+			self.refreshPageForChanges = self.getViewPreferenceBoolean(view, self.prefix + "refresh-for-changes");
+			self.showNavigationControls = self.getViewPreferenceBoolean(view, self.prefix + "show-navigation-controls");
+			self.scaleViewSlider = self.getViewPreferenceBoolean(view, self.prefix + "show-scale-controls");
+			self.enableDeepLinking = self.getViewPreferenceBoolean(view, self.prefix + "enable-deep-linking");
+			self.singlePageApplication = self.getViewPreferenceBoolean(view, self.prefix + "application");
+			self.showUpdateNotification = document.cookie!="" ? document.cookie.indexOf(self.pageRefreshedName)!=-1 : false;
+
+			if (self.scaleViewsToFit) {
+				var newScaleValue = self.scaleViewToFit();
+				
+				if (newScaleValue<0) {
+					setTimeout(self.scaleViewToFit, 500);
+				}
+			}
+			else {
+				self.viewScale = self.getViewScaleValue(view);
+				self.updateSliderValue(self.viewScale);
+			}
+		}
+	}
+
+	self.previousView = function(event) {
+		var rules = self.getStylesheetRules();
+		var view = self.getVisibleView()
+		var index = view ? self.getViewIndex(view) : -1;
+		var prevQueryIndex = index!=-1 ? index-1 : self.currentQuery.index-1;
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+
+		if (event) {
+			event.stopImmediatePropagation();
+		}
+
+		if (prevQueryIndex<0) {
+			return;
+		}
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			
+			if (rule.media!=null) {
+
+				if (queryIndex==prevQueryIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = prevQueryIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+					self.updateViewLabel();
+					self.updateURL();
+					self.dispatchViewChange();
+				}
+				else {
+					self.disableMediaQuery(rule);
+				}
+
+				queryIndex++;
+			}
+		}
+	}
+
+	self.nextView = function(event) {
+		var rules = self.getStylesheetRules();
+		var view = self.getVisibleView();
+		var index = view ? self.getViewIndex(view) : -1;
+		var nextQueryIndex = index!=-1 ? index+1 : self.currentQuery.index+1;
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+		var numberOfMediaQueries = self.getNumberOfMediaRules();
+
+		if (event) {
+			event.stopImmediatePropagation();
+		}
+
+		if (nextQueryIndex>=numberOfMediaQueries) {
+			return;
+		}
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			
+			if (rule.media!=null) {
+
+				if (queryIndex==nextQueryIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = nextQueryIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+					self.updateViewLabel();
+					self.updateURL();
+					self.dispatchViewChange();
+				}
+				else {
+					self.disableMediaQuery(rule);
+				}
+
+				queryIndex++;
+			}
+		}
+	}
+
+	self.enableMediaQuery = function(rule) {
+
+		try {
+			rule.media.mediaText = self.inclusionQuery;
+		}
+		catch(error) {
+			//self.log(error);
+			rule.conditionText = self.inclusionQuery;
+		}
+	}
+
+	self.disableMediaQuery = function(rule) {
+
+		try {
+			rule.media.mediaText = self.exclusionQuery;
+		}
+		catch(error) {
+			rule.conditionText = self.exclusionQuery;
+		}
+	}
+
+	self.dispatchViewChange = function() {
+		try {
+			var event = new Event(self.NAVIGATION_CHANGE);
+			window.dispatchEvent(event);
+		}
+		catch (error) {
+			// In IE 11: Object doesn't support this action
+		}
+	}
+
+	self.getNumberOfMediaRules = function() {
+		var rules = self.getStylesheetRules();
+		var numberOfQueries = 0;
+
+		for (var i=0;i<rules.length;i++) {
+			if (rules[i].media!=null) { numberOfQueries++; }
+		}
+		return numberOfQueries;
+	}
+
+	/////////////////////////////////////////
+	// VIEW SCALE 
+	/////////////////////////////////////////
+
+	self.sliderChangeHandler = function(event) {
+		var value = event.currentTarget.value/100;
+		var view = self.getVisibleView();
+		self.setViewScaleValue(view, value, false, true);
+	}
+
+	self.updateSliderValue = function(scale) {
+		var slider = document.getElementById("ViewZoomSliderInput");
+		var tooltip = parseInt(scale * 100 + "") + "%";
+		var inputType;
+		
+		if (slider) {
+			slider["value"] = scale * 100;
+			inputType = slider.getAttributeNS(null, "type");
+
+			if (inputType!="range") {
+				// input range is not supported
+				slider.style.display = "none";
+			}
+
+			self.setTooltip(slider, tooltip);
+		}
+	}
+
+	self.viewChangeHandler = function(event) {
+		var view = self.getVisibleView();
+		var matrix = view ? getComputedStyle(view).transform : null;
+		
+		if (matrix) {
+			self.viewScale = self.getViewScaleValue(view);
+			
+			var scaleNeededToFit = self.getViewFitToViewportScale(view);
+			var isViewLargerThanViewport = scaleNeededToFit<1;
+			
+			// scale large view to fit if scale to fit is enabled
+			//if (isViewLargerThanViewport && scaleViewsToFit) {
+			if (self.scaleViewsToFit) {
+				//setViewScaleValue(view, scale, true);
+				self.scaleViewToFit();
+			}
+			else {
+				self.updateSliderValue(self.viewScale);
+			}
+		}
+	}
+
+	self.getViewScaleValue = function(view) {
+		var matrix = getComputedStyle(view).transform;
+
+		if (matrix) {
+			var matrixArray = matrix.replace("matrix(", "").split(",");
+			var scaleX = parseFloat(matrixArray[0]);
+			var scaleY = parseFloat(matrixArray[3]);
+			var scale = Math.min(scaleX, scaleY);
+		}
+
+		return scale;
+	}
+
+	self.getViewTranslateYValue = function(view) {
+		var matrix = getComputedStyle(view).transform;
+
+		if (matrix) {
+			var matrixArray = matrix.replace("matrix(", "").split(",");
+			var translateY = parseFloat(matrixArray[5]);
+		}
+
+		return translateY;
+	}
+
+	self.getViewTop = function(view) {
+		var top = getComputedStyle(view).top;
+
+		return top;
+	}
+
+	self.setViewScaleValue = function(view, desiredScale, scaleViewToFit, centerVertically) {
+		var transform = getComputedStyle(view).transform;
+		var scaleNeededToFit = self.getViewFitToViewportScale(view);
+		var isViewLargerThanViewport = scaleNeededToFit<1;
+		var shrunkToFit = false;
+		
+		if (scaleViewToFit && isViewLargerThanViewport) {
+			desiredScale = scaleNeededToFit;
+			shrunkToFit = true;
+		}
+
+		if (isNaN(desiredScale)) {
+			desiredScale = 1;
+		}
+
+		desiredScale = self.getShortNumber(desiredScale);
+
+		self.updateSliderValue(desiredScale);
+
+		transform = self.getCSSPropertyValueForElement(view.id, "transform");
+
+		if (transform!=null) {
+			var horizontalCenter = transform.indexOf("translateX")!=-1;
+			var verticalCenter = transform.indexOf("translateY")!=-1;
+			var horizontalAndVerticalCenter = (horizontalCenter && verticalCenter) || (transform.indexOf("translate(")!=-1);
+			var topPosition = null;
+			var leftPosition = null;
+			var translateY = null;
+			var translateX = "-50%";
+			var centerForNavigation = self.showNavigationControls!=null && self.scaleViewsToFit;
+
+			//if (horizontalAndVerticalCenter || horizontalCenter || verticalCenter) {
+			if (horizontalAndVerticalCenter || centerForNavigation) {
+				translateX = "-50%";
+
+				// if view is smaller than viewport or center vertically is true then center vertically
+				if (shrunkToFit || centerVertically) {
+					translateX = "-50%";
+					translateY = "-50%";
+					topPosition = "50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					translateY = "0";
+					topPosition = "0";
+					leftPosition = "0";
+				}
+				
+				view.style.transform = "translateX(" + translateX + ") translateY(" + translateY + ") scale(" + desiredScale + ")";
+
+				if (view.style.top != topPosition) {
+					view.style.top = topPosition + "";
+				}
+
+				if (view.style.left != leftPosition) {
+					view.style.left = leftPosition + "";
+				}
+				//view.style.transform = "translate(-50%,-50%) scale(" + desiredScale + ")";
+			}
+			else if (horizontalCenter) {
+				translateY = shrunkToFit ? "-50%" : "0%";
+				view.style.transform = "translateY(" + translateY + ") translateX(-50%) scale(" + desiredScale + ")";
+
+				// this next function needs work
+				//topPosition = getVerticallyCenteredTopValue(view);
+
+				if (shrunkToFit) {
+					view.style.top = "50%";
+				}
+				else {
+					view.style.top = "0";
+				}
+			}
+			else if (verticalCenter) {
+				view.style.transform = "translateY(-50%) scale(" + desiredScale + ")";
+			}
+			else {
+				view.style.transform = "scale(" + desiredScale + ")";
+			}
+
+			if (desiredScale!=1) {
+				// attempt to anchor to the top as scaled up
+				//view.style.top = null;
+			}
+		}
+
+		if (shrunkToFit) {
+			return scaleNeededToFit;
+		}
+
+		return desiredScale;
+	}
+
+	self.getVerticallyCenteredTopValue = function(view) {
+		var originalTransform = view.style.transform;
+		var originalTop = view.style.top;
+		var transform = null;
+
+		view.style.transform = "translateY(-50%)" + originalTransform;
+		view.style.top = "50%";
+		var translateY = self.getViewTranslateYValue(view);
+		view.style.transform = originalTransform;
+		view.style.top = originalTop;
+		return translateY;
+	}
+
+	self.getViewFitToViewportScale = function(view) {
+		var availableWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		var availableHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		var elementWidth = parseFloat(getComputedStyle(view, "style").width);
+		var elementHeight = parseFloat(getComputedStyle(view, "style").height);
+		var newScale = 1;
+
+		availableWidth -= self.horizontalPadding;
+		availableHeight -= self.verticalPadding;
+
+		if (elementWidth > availableWidth || elementHeight > availableHeight) {
+			newScale = Math.min(availableHeight/elementHeight, availableWidth/elementWidth);
+		}
+		
+		return newScale;
+	}
+
+	self.keypressHandler = function(event) {
+		var rightKey = 39;
+		var leftKey = 37;
+		
+		// listen for both events 
+		if (event.type=="keypress") {
+			window.removeEventListener("keyup", self.keypressHandler);
+		}
+		else {
+			window.removeEventListener("keypress", self.keypressHandler);
+		}
+		
+		if (self.showNavigationControls) {
+			if (self.navigationOnKeypress) {
+				if (event.keyCode==rightKey) {
+					self.nextView();
+				}
+				if (event.keyCode==leftKey) {
+					self.previousView();
+				}
+			}
+		}
+		else if (self.navigationOnKeypress) {
+			if (event.keyCode==rightKey) {
+				self.nextView();
+			}
+			if (event.keyCode==leftKey) {
+				self.previousView();
+			}
+		}
+	}
+
+	///////////////////////////////////
+	// GENERAL FUNCTIONS
+	///////////////////////////////////
+
+	self.getViewById = function(id) {
+		id = id ? id.replace("#", "") : "";
+		var view = self.viewIds.indexOf(id)!=-1 && document.getElementById(id);
+		return view;
+	}
+
+	self.getViewIds = function() {
+		var viewIds = self.getViewPreferenceValue(document.body, self.prefix + "view-ids");
+		var viewId = null;
+
+		viewIds = viewIds!=null && viewIds!="" ? viewIds.split(",") : [];
+
+		if (viewIds.length==0) {
+			viewId = self.getViewPreferenceValue(document.body, self.prefix + "view-id");
+			viewIds = viewId ? [viewId] : [];
+		}
+
+		return viewIds;
+	}
+
+	self.getApplicationStylesheet = function() {
+		var stylesheetId = self.getViewPreferenceValue(document.body, self.prefix + "stylesheet-id");
+		self.applicationStylesheet = document.getElementById("applicationStylesheet");
+		return self.applicationStylesheet.sheet;
+	}
+
+	self.getViewQueries = function() {
+		var stylesheetId = self.getViewPreferenceValue(document.body, self.prefix + "stylesheet-id");
+		var viewIds = self.getViewIds();
+	}
+
+	self.getVisibleView = function() {
+		var viewIds = self.getViewIds();
+
+		try {
+			//var rules = self.getStylesheetRules();
+			//var styleSheet = self.getApplicationStylesheet();
+
+			/*
+			viewIds = rules[1].selectorText.split(/\,?\s+?#/);
+			if (viewIds[0]=="*") {
+				viewIds = rules[2].selectorText.split(/\,?\s+?#/);
+			}
+			*/
+		}
+		catch(error) {
+			console.log("For the page functionality to work the first two style declarations must be the generated ones.");
+			return;
+		}
+		
+		for (var i=0;i<viewIds.length;i++) {
+			var viewId = viewIds[i].replace(/[\#?\.?](.*)/, "$" + "1");
+			var view = document.getElementById(viewId);
+			var postName = "_Class";
+
+			if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
+				view = document.getElementById(viewId.replace(postName, ""));
+			}
+			
+			if (view) {
+				var display = window.getComputedStyle(view).display;
+		
+				if (display=="block") {
+					return view;
+				}
+			}
+		}
+
+		return null;
+	}
+
+	self.getViewIndex = function(view) {
+		var viewIds = self.getViewIds();
+		var id = view ? view.id : null;
+		var index = id && viewIds ? viewIds.indexOf(id) : -1;
+
+		return index;
+	}
+
+	self.syncronizeViewToURL = function() {
+		var fragment = window.location.hash;
+		var view = self.getViewById(fragment);
+		var index = view ? self.getViewIndex(view) : 0;
+		if (index==-1) index = 0;
+		var currentView = self.hideViews(index);
+
+		if (self.supportsPopState && currentView) {
+
+			if (fragment==null) {
+				window.history.replaceState({name:currentView.id}, null, "#"+ currentView.id);
+			}
+			else {
+				window.history.pushState({name:currentView.id}, null, "#"+ currentView.id);
+			}
+		}
+		return view;
+	}
+
+	self.getViewPreferenceBoolean = function(view, property) {
+		var value = window.getComputedStyle(view).getPropertyValue(property);
+		var type = typeof value;
+		
+		if (value=="true" || (type=="string" && value.indexOf("true")!=-1)) {
+			return true;
+		}
+
+		return false;
+	}
+
+	self.getViewPreferenceValue = function(view, property) {
+		var value = window.getComputedStyle(view).getPropertyValue(property);
+		if (value===undefined) {
+			return null;
+		}
+		
+		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, "$1")
+		return value;
+	}
+
+	self.getCSSPropertyValueForElement = function(id, property) {
+		var styleSheets = document.styleSheets;
+		var numOfStylesheets = styleSheets.length;
+		var values = [];
+		var selectorIDText = "#" + id;
+		var selectorClassText = "." + id + "_Class";
+		var value;
+
+		for(var i=0;i<numOfStylesheets;i++) {
+			var styleSheet = styleSheets[i];
+			var cssRules = self.getStylesheetRules(styleSheet);
+			var numOfCSSRules = cssRules.length;
+			var cssRule;
+			
+			for (var j=0;j<numOfCSSRules;j++) {
+				cssRule = cssRules[j];
+				
+				if (cssRule.media) {
+					var mediaRules = cssRule.cssRules;
+					var numOfMediaRules = mediaRules ? mediaRules.length : 0;
+					
+					for(var k=0;k<numOfMediaRules;k++) {
+						var mediaRule = mediaRules[k];
+						
+						if (mediaRule.selectorText==selectorIDText || mediaRule.selectorText==selectorClassText) {
+							
+							if (mediaRule.style && property in mediaRule.style) {
+								value = mediaRule.style.getPropertyValue(property);
+								//console.log(property+":" + value);
+								values.push(value);
+							}
+						}
+					}
+				}
+				else {
+
+					if (cssRule.selectorText==selectorIDText || cssRule.selectorText==selectorClassText) {
+						if (cssRule.style && property in cssRule.style) {
+							value = cssRule.style.getPropertyValue(property);
+							//console.log(property+":" + value);
+							values.push(value);
+						}
+					}
+				}
+			}
+		}
+		
+		return values.pop();
+	}
+
+	self.collectViews = function() {
+		var viewIds = self.getViewIds();
+
+		for (let index = 0; index < viewIds.length; index++) {
+			const id = viewIds[index];
+			const view = self.getViewById(id);
+			self.views[id] = view;
+		}
+		
+		self.viewIds = viewIds;
+	}
+
+	self.collectMediaQueries = function() {
+		var viewIds = self.getViewIds();
+		var styleSheet = self.getApplicationStylesheet();
+		var cssRules = self.getStylesheetRules(styleSheet);
+		var numOfCSSRules = cssRules.length;
+		var cssRule;
+		var id = null;
+		var selectorIDText = "#" + id;
+		var selectorClassText = "." + id + "_Class";
+		
+		for (var j=0;j<numOfCSSRules;j++) {
+			cssRule = cssRules[j];
+			
+			if (cssRule.media) {
+				var mediaRules = cssRule.cssRules;
+				var numOfMediaRules = mediaRules ? mediaRules.length : 0;
+				
+				for(var k=0;k<numOfMediaRules;k++) {
+					var mediaRule = mediaRules[k];
+					var mediaId = null;
+
+					if (k<2) {
+						mediaId = mediaRule.selectorText.replace(/[#|\s|*]?/g, "");
+						
+						if (viewIds.indexOf(mediaId)!=-1) {
+							self.mediaQueryDictionary[mediaId] = cssRule;
+							self.addState(mediaId, cssRule);
+							break;
+						}
+					}
+					else {
+						break;
+					}
+				}
+			}
+			else {
+
+				if (cssRule.selectorText==selectorIDText || cssRule.selectorText==selectorClassText) {
+					continue;
+				}
+			}
+		}
+	}
+
+	self.addState = function(name, cssRule) {
+		var state = {name:name, rule:cssRule};
+		self.states.push(name);
+		self.statesDictionary[name] = state;
+	}
+
+	self.hasState = function(name) {
+		
+		if (self.states.indexOf(name)!=-1) {
+			return true;
+		}
+		return false;
+	}
+
+	self.goToState = function(name, maintainPreviousState) {
+		var state = self.statesDictionary[name];
+
+		if (state) {
+			if (maintainPreviousState==false || maintainPreviousState==null) {
+				self.hideViews();
+			}
+			self.enableMediaQuery(state.rule);
+			self.updateViewLabel();
+			self.updateURL();
+		}
+		else {
+			var event = new Event(self.STATE_NOT_FOUND);
+			self.stateName = name;
+			window.dispatchEvent(event);
+		}
+	}
+
+	self.resizeHandler = function(event) {
+		if (self.scaleViewsOnResize) {
+			self.scaleViewToFit();
+		}
+	}
+
+	self.preventDoubleClick = function(event) {
+		event.stopImmediatePropagation();
+	}
+
+	self.hashChangeHandler = function(event) {
+		var fragment = window.location.hash ? window.location.hash.replace("#", "") : "";
+		var view = self.getViewById(fragment);
+
+		if (view) {
+			self.hideViews();
+			self.showView(view);
+			self.updateViewLabel();
+		}
+		else {
+			window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
+		}
+	}
+
+	self.popStateHandler = function(event) {
+		var state = event.state;
+		var fragment = state ? state.name : window.location.hash;
+		var view = self.getViewById(fragment);
+
+		if (view) {
+			self.hideViews();
+			self.showView(view);
+			self.updateViewLabel();
+		}
+		else {
+			window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
+		}
+	}
+
+	self.doubleClickHandler = function(event) {
+		var view = self.getVisibleView();
+		var scaleValue = self.getViewScaleValue(view);
+		var scaleNeededToFit = self.getViewFitToViewportScale(view);
+
+		// Three scenarios
+		// - scale to fit on double click
+		// - set scale to actual size on double click
+		// - switch between scale to fit and actual page size
+
+		// if scale and actual size enabled then switch between
+		if (self.scaleToFitOnDoubleClick && self.actualSizeOnDoubleClick) {
+			var isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
+			var isScaled = false;
+			
+			// if scale is not 1 then view needs scaling
+			if (scaleNeededToFit!=1) {
+
+				// if current scale is at 1 it is at actual size
+				// scale it to fit
+				if (scaleValue==1) {
+					self.scaleViewToFit();
+					isScaled = true;
+				}
+				else {
+					// scale is not at 1 so switch to actual size
+					self.scaleViewToActualSize();
+					isScaled = false;
+				}
+			}
+			else {
+				// view is smaller than viewport 
+				// so scale to fit() is scale actual size
+				// actual size and scaled size are the same
+				// but call scale to fit to retain centering
+				self.scaleViewToFit();
+				isScaled = false;
+			}
+			
+			view.setAttributeNS(null, SIZE_STATE_NAME, isScaled+"");
+			isViewScaled = view.getAttributeNS(null, SIZE_STATE_NAME);
+		}
+		else if (self.scaleToFitOnDoubleClick) {
+			self.scaleViewToFit();
+		}
+		else if (self.actualSizeOnDoubleClick) {
+			self.scaleViewToActualSize();
+		}
+
+	}
+
+	self.scaleViewToFit = function() {
+		var view = self.getVisibleView();
+		return self.setViewScaleValue(view, 1, true, true);
+	}
+
+	self.scaleViewToActualSize = function() {
+		var view = self.getVisibleView();
+		self.setViewScaleValue(view, 1);
+	}
+
+	self.onloadHandler = function(event) {
+		self.initialize();
+	}
+
+	self.getStackArray = function(error) {
+		var value = "";
+		
+		if (error==null) {
+		  try {
+			 error = new Error("Stack");
+		  }
+		  catch (e) {
+			 
+		  }
+		}
+		
+		if ("stack" in error) {
+		  value = error.stack;
+		  var methods = value.match(/\\n/gm);
+	 
+		  var newArray = methods ? methods.map(function (value, index, array) {
+			 value = value.replace("at ","");
+			 return value;
+		  }) : null;
+	 
+		  if (newArray && newArray[0]=="getStackTrace") {
+			 newArray.shift();
+		  }
+		  if (newArray && newArray[0]=="getStackArray") {
+			 newArray.shift();
+		  }
+		  if (newArray && newArray[0]=="getFunctionName") {
+			 newArray.shift();
+		  }
+		  if (newArray && newArray[0]=="object") {
+			 newArray.shift();
+		  }
+		  if (newArray && newArray[0]=="log") {
+			 newArray.shift();
+		  }
+	 
+			return newArray;
+		}
+		
+		return null;
+	}
+
+	this.log = function(value) {
+		console.log.apply(this, [value]);
+	}
+	
+	// initialize on load
+	// sometimes the body size is 0 so we call this now and again later
+	window.addEventListener("load", self.onloadHandler);
+	window.document.addEventListener("DOMContentLoaded", self.onloadHandler);
+}
+
+var application = new Application();
+window.application = application;
+</script>
+</body>
+</html>

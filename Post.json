@@ -1,0 +1,18 @@
+{
+	id: 2019289309482934,
+	title: "Regressionsmodelle: Gut erklärt",
+	link: "http://deathbeam.de",
+	text: "Das ist ein echt spannendes und fantastisches Video über Regressionsmodelle. Ipsum sum!" 
+	post_date: 23-04-2019
+	tags: ["Mathematik","Regression","Modelle", "Stochastik"],
+	
+	author: "Teuber"
+	author_id:201928930924564,
+
+	section_id: 0,
+	section: "Allgemein"
+}
+
+
+
+
