@@ -1,0 +1,26 @@
+.App {
+  margin: 0%;
+  padding: 0%;
+}
+.Feed {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  border: 1px solid teal;
+  box-sizing: border-box;
+}
+.FeedThread {
+  flex: 25%;
+  padding: 0px;
+  background-color: darkslategray;
+}
+.FeedThread.FeedVideo {
+  margin-top: 10px;
+}
+.FeedThread img {
+  max-width: 100%;
+  height: auto;
+}
+.title {
+  font-weight: bold;
+}
