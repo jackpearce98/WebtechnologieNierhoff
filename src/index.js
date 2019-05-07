@@ -7,7 +7,7 @@ import "./styles.css";
 import { Feed } from "./Components/Feed";
 import { Header } from "./Components/Header";
 import { Search } from "./Components/Search";
-import { Thread } from "./Components/Thread";
+import { Thread } from "./Thread";
 import { WritePopUp } from "./Components/WritePopUp";
 
 ReactModal.setAppElement("#root");
@@ -29,7 +29,7 @@ class App extends React.Component {
   render() {
     if (this.state.page === "start")
       return (
-        <div class="App">
+        <div className="App">
           <Header />
           <WritePopUp
             showModal={this}
@@ -42,7 +42,7 @@ class App extends React.Component {
       );
     if (this.state.page === "thread")
       return (
-        <div class="App">
+        <div className="App">
           <Thread id={this.state.id} onclick={this.returnToStartPage} />
         </div>
       );

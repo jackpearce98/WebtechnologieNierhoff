@@ -1,5 +1,5 @@
 import React from "react";
-import { FeedPicture } from "./FeedPicture.js";
+import { FeedPicture } from "./FeedPicture.jsx";
 
 export class Feed extends React.Component {
   constructor(props) {
@@ -9,14 +9,14 @@ export class Feed extends React.Component {
     for (var i = 0; i < 4; i++) {
       var x = json.Posts[i];
       this.feedPictures.push(
-        <div class="FeedThread">
+        <div className="FeedThread">
           <FeedPicture
             videoId={x["link"]}
             id={x["id"]}
             onclick={props.onclick.bind(this)}
           />
-          <div class="title">{x["title"]}</div>
-          <div class="author">von {x["author"]}</div>
+          <div className="title">{x["title"]}</div>
+          <div className="author">von {x["author"]}</div>
         </div>
       );
     }

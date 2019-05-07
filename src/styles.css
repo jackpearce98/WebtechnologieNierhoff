@@ -1,18 +1,19 @@
 .App {
   margin: 0%;
   padding: 0%;
+  text-align: center;
 }
 .Feed {
   width: 50%;
   height: 50%;
   display: flex;
-  border: 1px solid teal;
+  border: 1px solid rgba(39, 57, 61, 1);
   box-sizing: border-box;
 }
 .FeedThread {
   flex: 25%;
   padding: 0px;
-  background-color: darkslategray;
+  background-color: rgba(39, 57, 61, 1);
 }
 .FeedThread.FeedVideo {
 }
@@ -22,4 +23,13 @@
 }
 .title {
   font-weight: bold;
+}
+form input {
+  text-align: center;
+}
+#formText {
+  color: rgba(25, 157, 116, 1);
+}
+#formText inpu {
+  border-bottom-color: rgba(25, 157, 116, 1);
 }

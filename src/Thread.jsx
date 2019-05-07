@@ -1,6 +1,7 @@
 import React from "react";
 import YouTube from "react-youtube";
 import Button from "@material-ui/core/Button";
+
 export class Thread extends React.Component {
   constructor(props) {
     super(props);
@@ -18,8 +19,8 @@ export class Thread extends React.Component {
   render() {
     return (
       <div class="Post">
-        <Button variant="" color="primary" onClick={this.onclick}>
-          Back
+        <Button color="primary" onClick={this.onclick}>
+          BackSs
         </Button>
         {this.post["title"]}
         <YouTube

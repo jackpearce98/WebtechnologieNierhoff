@@ -1,4 +1,10 @@
 import React from "react";
+/**
+ * Returns you the thumbnail of a Youtube video as an img.
+ * @param onclick Has onclick which will be applied to the Thumbnail
+ * @param id Has an id for its data to give it to the onclick function.
+ * @param videoId Has videoId is an url to a youtube video which the thumbnail should be taken.
+ */
 export class FeedPicture extends React.Component {
   constructor(props) {
     super(props);
