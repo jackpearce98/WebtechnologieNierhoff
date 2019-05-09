@@ -1,0 +1,20 @@
+[
+    {
+        name: "userName",
+        hash: "iudfhiweuhgfiurhgirueof",
+        salt: "fiojfoei",
+        group: "student",
+    },
+    {
+        name: "Köhn",
+        hash: "iudfhiweuhgfiurhgirueof",
+        salt: "fiojfoei",
+        group: "dozent",
+    },
+    {
+        name: "alpha kevin",
+        hash: "iudfhiweuhgfiurhgirueof",
+        salt: "fiojfoei",
+        group: "student",
+    }
+]
