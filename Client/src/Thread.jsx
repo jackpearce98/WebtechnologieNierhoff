@@ -1,12 +1,27 @@
 import React from "react";
 import YouTube from "react-youtube";
-import Button from "@material-ui/core/Button";
-
+import ReactModal from "react-modal";
+import { ExitButton } from "./Components/StyledButton";
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    "background-color": "rgba(39,57,61,1)",
+    transform: "translate(-50%, -50%)"
+  }
+};
 export class Thread extends React.Component {
   constructor(props) {
     super(props);
+    this.main = props.showModal;
     this.post = this.getPost(props.id);
-    this.onclick = props.onclick;
+    console.log(this.post);
+    this.onclick = props.handleCloseModal;
+    this.handleCloseModal = props.handleCloseModal;
+    this.handleOpenModal = props.handleOpenModal;
     const opts = {
       height: "390",
       width: "640",
@@ -19,19 +34,24 @@ export class Thread extends React.Component {
   render() {
     return (
       <div class="Post">
-        <Button color="primary" onClick={this.onclick}>
-          BackSs
-        </Button>
-        {this.post["title"]}
-        <YouTube
-          videoId={this.post["link"].replace(
-            "https://www.youtube.com/watch?v=",
-            ""
-          )}
-          opts={this.opts}
-          onReady={this._onReady}
-        />
-        {this.post["text"]}
+        <ReactModal
+          isOpen={this.main.state.showPostModal}
+          contentLabel="Minimal Modal Example"
+          style={customStyles}
+        >
+          <ExitButton onClick={this.onclick} />
+
+          {this.post["title"]}
+          <YouTube
+            videoId={this.post["link"].replace(
+              "https://www.youtube.com/watch?v=",
+              ""
+            )}
+            opts={this.opts}
+            onReady={this._onReady}
+          />
+          {this.post["text"]}
+        </ReactModal>
       </div>
     );
   }

@@ -4,7 +4,6 @@
   text-align: center;
 }
 .Feed {
-  width: 50%;
   height: 50%;
   display: flex;
   border: 1px solid rgba(39, 57, 61, 1);
@@ -32,4 +31,13 @@ form input {
 }
 #formText inpu {
   border-bottom-color: rgba(25, 157, 116, 1);
+}
+#main {
+  background-color: rgba(39, 57, 61, 1);
+}
+#search {
+  width: 100%;
+  padding-left: -5;
+  padding-right: -5;
+  background-color: rgba(39, 57, 61, 1);
 }

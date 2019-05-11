@@ -5,7 +5,7 @@ import ReactModal from "react-modal";
 import "./Post.json";
 import "./styles.css";
 import { Feed } from "./Components/Feed";
-import { Header } from "./Components/Header";
+import Header from "./Components/Header";
 import { Search } from "./Components/Search";
 import { Thread } from "./Thread";
 import { WritePopUp } from "./Components/WritePopUp";
@@ -17,42 +17,46 @@ class App extends React.Component {
     this.state = {
       page: "start",
       id: null,
-      showModal: false
+      showWriteModal: false,
+      showPostModal: false
     };
 
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.handleClosePostModal = this.handleClosePostModal.bind(this);
+    this.handleOpenPostModal = this.handleOpenPostModal.bind(this);
     this.returnOpenModal = this.returnOpenModal.bind(this);
     this.proceedClick = this.proceedClick.bind(this);
     this.returnToStartPage = this.returnToStartPage.bind(this);
+    this.postPopUp = null;
   }
   render() {
-    if (this.state.page === "start")
-      return (
-        <div className="App">
-          <Header />
+    return (
+      <div className="App">
+        <Header />
+        <div id="main">
           <WritePopUp
             showModal={this}
             handleCloseModal={this.handleCloseModal}
             handleOpenModal={this.handleOpenModal}
           />
+          {this.state.showPostModal ? this.postPopUp : ""}
           <Search />
           <Feed onclick={this.proceedClick} />
         </div>
-      );
-    if (this.state.page === "thread")
-      return (
-        <div className="App">
-          <Thread id={this.state.id} onclick={this.returnToStartPage} />
-        </div>
-      );
+      </div>
+    );
   }
   proceedClick(id) {
     console.log(id);
-    this.setState({
-      page: "thread",
-      id: id
-    });
+    this.postPopUp = (
+      <Thread
+        id={id}
+        showModal={this}
+        handleCloseModal={this.handleClosePostModal}
+      />
+    );
+    this.setState({ showPostModal: true });
   }
   returnToStartPage() {
     this.setState({
@@ -64,11 +68,18 @@ class App extends React.Component {
     return this.state.showModal;
   }
   handleOpenModal() {
-    this.setState({ showModal: true });
+    this.setState({ showWriteModal: true });
   }
 
   handleCloseModal() {
-    this.setState({ showModal: false });
+    this.setState({ showWriteModal: false });
+  }
+  handleOpenPostModal() {
+    this.setState({ showPostModal: true });
+  }
+
+  handleClosePostModal() {
+    this.setState({ showPostModal: false });
   }
 }
 

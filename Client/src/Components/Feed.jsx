@@ -9,7 +9,7 @@ export class Feed extends React.Component {
     for (var i = 0; i < 4; i++) {
       var x = json.Posts[i];
       this.feedPictures.push(
-        <div className="FeedThread">
+        <div className="FeedThread" key={x["id"]}>
           <FeedPicture
             videoId={x["link"]}
             id={x["id"]}
@@ -23,6 +23,6 @@ export class Feed extends React.Component {
     console.log(this.feedPictures);
   }
   render() {
-    return <div class="Feed">{this.feedPictures}</div>;
+    return <div className="Feed">{this.feedPictures}</div>;
   }
 }

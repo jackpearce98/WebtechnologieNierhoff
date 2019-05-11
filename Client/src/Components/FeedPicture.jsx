@@ -9,14 +9,17 @@ export class FeedPicture extends React.Component {
   constructor(props) {
     super(props);
     this.picture = props.videoId
-      .replace("https://www.youtube.com/watch?v=", "http://img.youtube.com/vi/")
+      .replace(
+        "https://www.youtube.com/watch?v=",
+        "https://img.youtube.com/vi/"
+      )
       .concat("/0.jpg");
     this.onclick = props.onclick;
     this.id = props.id;
   }
   render() {
     return (
-      <div class="FeedVideo">
+      <div className="FeedVideo">
         <img src={this.picture} onClick={() => this.onclick(this.id)} />
       </div>
     );

@@ -1,8 +1,8 @@
 import React from "react";
 import ReactModal from "react-modal";
 import { NormalButton, ExitButton } from "./StyledButton";
-import { Form, Input } from "reactstrap";
-
+import Input from "@material-ui/core/Input";
+import FormControl from "@material-ui/core/FormControl";
 const customStyles = {
   content: {
     top: "50%",
@@ -35,12 +35,12 @@ export class WritePopUp extends React.Component {
       <div>
         <NormalButton text="Write" onClick={this.handleOpenModal} />
         <ReactModal
-          isOpen={this.main.state.showModal}
+          isOpen={this.main.state.showWriteModal}
           contentLabel="Minimal Modal Example"
           style={customStyles}
         >
           <ExitButton onClick={this.handleCloseModal} />
-          <Form>
+          <FormControl>
             <br />
             <b id="formText">Titel</b>
             <br />
@@ -56,7 +56,7 @@ export class WritePopUp extends React.Component {
             <Input
               type="text"
               placeholder="text"
-              name="link"
+              name="text"
               onChange={this.updateInput}
             />
             <br />
@@ -65,7 +65,7 @@ export class WritePopUp extends React.Component {
             <Input
               type="text"
               placeholder="https://www.youtube.com/watch?v=example"
-              name="text"
+              name="link"
               onChange={this.updateInput}
             />
             <br />
@@ -88,7 +88,7 @@ export class WritePopUp extends React.Component {
             />
             <br />
             <NormalButton text="Posten" onClick={this.post} />
-          </Form>
+          </FormControl>
         </ReactModal>
       </div>
     );
@@ -102,7 +102,7 @@ export class WritePopUp extends React.Component {
       title: this.state.title,
       link: this.state.link,
       text: this.state.text,
-      post_date: new Date().getDate(),
+      post_date: new Date(),
       tags: this.state.tags.split(","),
       author: "Jan Nierhoff",
       author_id: this.lookForAuthorId("Jan Nierhoff"),
