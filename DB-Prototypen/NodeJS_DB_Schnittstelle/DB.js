@@ -12,6 +12,14 @@ db.once('open', function() {
     console.log("1.21 GIGAWATT!!!!!")
 });
 
+/*
+app.get("/mr", function(req, res){
+    db.findById(JSON.stringify(req.body.id), function (err, SelectedInfos) {
+        res.send(SelectedInfos);
+    });
+
+});
+*/
 let postSchema= new mongoose.Schema({
     title: String,
     link: String,
@@ -33,7 +41,7 @@ app.post("/mr", (req, res)=> {
         title: req.body.title,
         link: req.body.link,
         text: req.body.text,
-        post_date: req.body.post_date,
+        post_date: Date,
         tags: req.body.tags,
 
         author: req.body.author,
@@ -42,7 +50,7 @@ app.post("/mr", (req, res)=> {
         section_id: req.body.section_id,
         section: req.body.section
     });
-    getNewPost.save(function (err, getNewPost) {
+    getNewPost.save(function (err) {
         if (err) return console.error(err);
     });
     console.log("Es funzt");
